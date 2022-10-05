@@ -8,30 +8,50 @@
     <title>Document</title>
 </head>
 <body>
-<div class="right">
-    <div>
-        <h3 class="tit">how to use</h3>
-        <p>1.名前を入力し、addで登録</p>
-        <p>2.すべてのユーザーが入力できたら、setで登録完了</p>
-        <p>3.SUBMITで順番決定</p>
+    <div class="right">
+        <div class="di">
+            <h3 class="tit">how to use</h3>
+            <p>1.名前を入力し、addで登録</p>
+            <p>2.すべてのユーザーが入力できたら、setで登録完了</p>
+            <p>3.SUBMITで順番決定</p>
+        </div>
+        <div class="di">
+            <h3 class="tit">1.名前を入力</h3>
+            <form action="#">
+                <input type="text" value="" id="text">
+                <input type="button" value="add" id="btn">
+                <input type="button" value="claer">
+            </form>
+            <p class="tet"></p>
+        </div>    
+        <div class="di">
+            <h3 class="tit">2.登録ユーザー一覧</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>claer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div>
-        <h3 class="tit">1.名前を入力</h3>
-        <input type="text" value="">
-        <input type="button" value="add">
-        <input type="button" value="claer">
-    </div>    
-    <div>
-        <h3 class="tit">2.登録ユーザー一覧</h3>
-        <table>
-            <tr>
-                <th>name</th>
-                <th>claer</th>
-            </tr>
-        </table>
+    <div class="input">
+        <button>リセット</button>
     </div>
 
-    <script src="js/test.js"></script>
-</div>
+    <form action="#">
+        <input type="text" id="inputms">
+        <input type="button" value="送信" onclick="showMs()">
+    </form>
+    <p id="outputms"></p>
+
+    <script src="js/temp.js"></script>
 </body>
 </html>
