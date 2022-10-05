@@ -18,6 +18,12 @@
 // }
 // console.log(document.querySelectorAll("td"));
 
+// したいことのメモ
+// ・クリックされたときの動作をできるようにする
+// ・textboxに入力された内容がtdの中に入るようにする
+// ・入力された内容を間違って入力されたら、clearできるようにする
+// ・入力された内容を指定の場所に出力し、ランダムで並べる
+
 
 
 const btn = document.getElementById("btn");
