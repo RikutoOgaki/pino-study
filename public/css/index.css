@@ -1,0 +1,61 @@
+.top {
+  display: flex;
+  text-align: center;
+  position: fixed;
+  margin: auto;
+}
+.top .sub {
+  width: 150px;
+  height: 40px;
+  background-color: tomato;
+  color: #fff;
+  list-style: none;
+}
+.top .sub:hover {
+  background-color: rgb(255, 126, 103);
+}
+.top .main {
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+  list-style: none;
+}
+.top .main .con {
+  background-color: black;
+  color: #fff;
+  list-style: none;
+  display: none;
+}
+.top .main .con li {
+  height: 40px;
+}
+.top .main .con .tent {
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  list-style: none;
+  display: none;
+  margin-left: 200px;
+  position: absolute;
+  top: 40px;
+}
+.top .main .con .tent li {
+  position: relative;
+}
+.top .main .con .tent:hover {
+  background-color: rgb(56, 56, 56);
+}
+.top .main .con .con1:hover .tent {
+  display: block;
+}
+.top .main:hover {
+  background-color: rgb(56, 56, 56);
+}
+.top .main:hover .con {
+  display: block;
+  margin-top: 15px;
+}
+.top .con > li:hover {
+  background-color: rgb(56, 56, 56);
+}
