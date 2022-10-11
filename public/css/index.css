@@ -1,7 +1,8 @@
 .top {
+  width: 750px;
+  height: 40px;
   display: flex;
   text-align: center;
-  position: fixed;
   margin: auto;
 }
 .top .sub {
