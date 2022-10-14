@@ -44,10 +44,10 @@
 .top .main .con .tent li {
   position: relative;
 }
-.top .main .con .tent:hover {
+.top .main .con .tent li:hover {
   background-color: rgb(56, 56, 56);
 }
-.top .main .con .con1:hover .tent {
+.top .main .con1:hover .tent {
   display: block;
 }
 .top .main:hover {

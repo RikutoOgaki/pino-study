@@ -11,9 +11,9 @@
         background-color: tomato;
         color: #fff;
         list-style: none;
-    }
-    .sub:hover{
-        background-color: rgb(255, 126, 103);
+        &:hover{
+            background-color: rgb(255, 126, 103);
+        }
     }
     .main{
         width: 200px;
@@ -41,11 +41,11 @@
             }
             .tent li{
                 position: relative;
+                &:hover{
+                    background-color: rgb(56, 56, 56);
+                }
             }
-            .tent:hover{
-                background-color: rgb(56, 56, 56);
-            }
-            .con1:hover{
+            &1:hover{
                 .tent{
                     display: block;
                 }
