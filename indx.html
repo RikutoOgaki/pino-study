@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,43 +9,57 @@
     <link rel="stylesheet" href="./public/css/index.css">
     <title>Drop Down</title>
 </head>
+
 <body>
-    <ul>
-        <li><a href="">HOME</a></li>
-        <li><a href="">TEXT</a>
-            <ul>
-                <li><a href="">text1</a></li>
-                <li><a href="">text2</a></li>
-                <li><a href="">text3</a></li>
-            </ul>
-        </li>
-        <li><a href="">PHOTO</a>
-            <ul>
-                <li><a href="">photo1</a></li>
-                <li><a href="">photo2</a></li>
-                <li><a href="">photo3</a></li>
-            </ul>
-        </li>
-        <li><a href="">MOVIE</a>
-            <ul>
-                <li><a href="">movie1</a></li>
-                <li><a href="">movie2</a></li>
-                <li><a href="">movie3</a></li>
-            </ul>
-        </li>
-        <li><a href="">STUDY</a>
-            <ul>
-                <li><a href="">study1</a>
-                    <ul>
-                        <li><a href="">study1-1</a></li>
-                        <li><a href="">study1-2</a></li>
-                        <li><a href="">study1-3</a></li>
-                    </ul>
-                </li>
-                <li><a href="">study2</a></li>
-                <li><a href="">study3</a></li>
-            </ul>
-        </li>
-    </ul>
+    <header>
+        <h1>CSS Drop Down</h1>
+    </header>
+    <main>
+        <div id="wrap">
+            <nav>
+                <ul class="nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">TEXT</a>
+                        <ul class="navChild">
+                            <li><a href="#">text1</a></li>
+                            <li><a href="#">text2</a></li>
+                            <li><a href="#">text3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PHOTO</a>
+                        <ul class="navChild">
+                            <li><a href="#">photo1</a></li>
+                            <li><a href="#">photo2</a></li>
+                            <li><a href="#">photo3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MOVIE</a>
+                        <ul class="navChild">
+                            <li><a href="#">movie1</a></li>
+                            <li><a href="#">movie2</a></li>
+                            <li><a href="#">movie3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">STUDY</a>
+                        <ul class="navChild">
+                            <li><a href="#">study1</a>
+                                <ul class="navChild">
+                                    <li><a href="#">study1-1</a></li>
+                                    <li><a href="#">study1-2</a></li>
+                                    <li><a href="#">study1-3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">study2</a></li>
+                            <li><a href="#">study3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
