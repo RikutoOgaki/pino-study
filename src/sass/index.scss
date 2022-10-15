@@ -17,7 +17,6 @@ main{
         width: 900px;
         height: 400px;
         margin: 200px auto;
-        border: tomato 1px solid;
     }
     .nav{
         width: 100%;
@@ -43,7 +42,11 @@ main{
             .navChild{
                 display: none;
                 background-color: #00152e;
-                position: relative;
+                & li{
+                    position: relative;
+                    border-bottom: dotted 1px #999;
+                    border-left: none;
+                }
                 >li .navChild{
                     display: none;
                 }

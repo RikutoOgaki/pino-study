@@ -20,7 +20,6 @@ main #wrap {
   width: 900px;
   height: 400px;
   margin: 200px auto;
-  border: tomato 1px solid;
 }
 main .nav {
   width: 100%;
@@ -48,7 +47,11 @@ main .nav > li:first-child a:hover {
 main .nav > li .navChild {
   display: none;
   background-color: #00152e;
+}
+main .nav > li .navChild li {
   position: relative;
+  border-bottom: dotted 1px #999;
+  border-left: none;
 }
 main .nav > li .navChild > li .navChild {
   display: none;
