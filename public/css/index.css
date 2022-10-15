@@ -17,9 +17,10 @@ main ul {
   list-style: none;
 }
 main #wrap {
-  width: 1000px;
+  width: 900px;
   height: 400px;
   margin: 200px auto;
+  border: tomato 1px solid;
 }
 main .nav {
   width: 100%;
@@ -33,27 +34,49 @@ main .nav > li {
   float: left;
   border-left: solid 1px #3d4f5a;
 }
-main .nav > li a {
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  line-height: 5;
-  width: 100%;
-  height: 100%;
-}
-main .nav > li a :link {
-  color: #333;
-  text-decoration: none;
-}
-main .nav > li a :visited {
-  color: #333;
-  text-decoration: none;
-}
-main .nav > li a .navChild {
-  display: none;
+main .nav > li a:hover {
+  background-color: #333;
 }
 main .nav > li:first-child {
   border-left: none;
   background-color: tomato;
   width: 80px;
+}
+main .nav > li:first-child a:hover {
+  background-color: rgb(246, 135, 115);
+}
+main .nav > li .navChild {
+  display: none;
+  background-color: #00152e;
+  position: relative;
+}
+main .nav > li .navChild > li .navChild {
+  display: none;
+}
+main .nav > li .navChild > li:hover .navChild {
+  display: block;
+}
+main .nav > li .navChild > li > .navChild li {
+  background-color: #3d4f5a;
+  width: 200px;
+  height: 50px;
+}
+main .nav > li .navChild > li > .navChild {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+main .nav > li:hover .navChild {
+  display: block;
+}
+main .nav > li a {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
 }

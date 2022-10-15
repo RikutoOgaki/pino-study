@@ -14,9 +14,10 @@ main{
         list-style: none;
     }
     #wrap{
-        width: 1000px;
+        width: 900px;
         height: 400px;
         margin: 200px auto;
+        border: tomato 1px solid;
     }
     .nav{
         width: 100%;
@@ -28,31 +29,52 @@ main{
             height: 50px;
             float: left;
             border-left: solid 1px #3d4f5a;
+            & a:hover{
+                background-color: #333;
+            }
+            &:first-child{
+                border-left: none;
+                background-color: tomato;
+                width: 80px;
+                & a:hover{
+                    background-color: rgb(246, 135, 115);
+                }
+            }
+            .navChild{
+                display: none;
+                background-color: #00152e;
+                position: relative;
+                >li .navChild{
+                    display: none;
+                }
+                >li:hover .navChild{
+                    display: block;
+                }
+                >li>.navChild li{
+                    background-color: #3d4f5a;
+                    width: 200px;
+                    height: 50px;
+                }
+                >li>.navChild{
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    display: none;
+                }
+            }
+            &:hover .navChild{
+                display: block;
+            }
             a{
+                color: #fff;
                 font-weight: bold;
                 display: block;
                 text-align: center;
-                line-height: 5;
+                line-height: 50px;
                 width: 100%;
                 height: 100%;
-                :link{
-                    color: #333;
-                    text-decoration: none;
-                }
-                :visited{
-                    color: #333;
-                    text-decoration: none;
-                }
-            .navChild{
-                display: none;
-                
+                text-decoration: none;
             }
-             }
-        }
-        >li:first-child{
-            border-left: none;
-            background-color: tomato;
-            width: 80px;
         }
     }
 
