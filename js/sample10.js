@@ -24,6 +24,9 @@ document.getElementById("btn").addEventListener('click' ,() => {
     else if(kak.value==20){
         lal.innerText = "成人してますね";
     }
+    else if(kak.value>=21&&kak.value<=99){
+        lal.innerText = "大人ですね"
+    }
     else if(kak.value ==100){
         lal.innerText = "長生きですね";
     }
