@@ -15,17 +15,26 @@ document.getElementById("btn").addEventListener('click' ,() => {
     if(kak.value>=0&&kak.value<=6){
         lal.innerText = "子供ですね";
     }
-    // else if(kak==7<kak&&12>=kak){
-    //     lal.innerText = "小学生ですね";
-    // }
-    // else if(kak ==13,14,15,16,17,18,19){
-    //     lal.innerText = "中高生ですね";
-    // }
-    // else if(kak ==20){
-    //     lal.innerText = "成人してますね";
-    // }
-    // else if(kak ==100){
-    //     lal.innerText = "長生きですね";
+    else if(kak.value>=7&&kak.value<=12){
+        lal.innerText = "小学生ですね";
+    }
+    else if(kak.value>=13&&kak.value<=18){
+        lal.innerText = "中高生ですね";
+    }
+    else if(kak.value==20){
+        lal.innerText = "成人してますね";
+    }
+    else if(kak.value ==100){
+        lal.innerText = "長生きですね";
+    }
+    else if(kak.value<0){
+        lal.innerText = "生まれてないですね"
+    }
+    else if(kak.value>=130){
+        lal.innerText = "長生きしすぎです"
+    }
+    // else if(kak.value){
+    //     lal.innerText = "何歳ですか？"
     // }
 
     // 7~12 小学生
