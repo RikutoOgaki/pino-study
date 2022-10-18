@@ -36,7 +36,7 @@ document.getElementById("btn").addEventListener('click' ,() => {
     else if(kak.value>=130){
         lal.innerText = "長生きしすぎです"
     }
-    // else if(kak.value){
+    // else if(kak.value==){
     //     lal.innerText = "何歳ですか？"
     // }
 

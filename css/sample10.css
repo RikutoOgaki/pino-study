@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background-color: #333;
+}
+h1{
+    color: #fff;
+    padding: 1rem;
+}
+#btn{
+    width: 100px;
+    height: 50px;
+    margin-left: 40px;
+}
+#tet{
+    width: 200px;
+    height: 50px;
+    padding-left: 40px;
+}
+#txt{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 100px;
+}
+main{
+    padding: 200px 0;
+    background-color: aquamarine;
+}
+.wrap{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
