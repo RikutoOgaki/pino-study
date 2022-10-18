@@ -1,0 +1,101 @@
+.header{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.main{
+    width: 1000px;
+    margin: 40px auto;
+}
+.main>ul{
+    list-style: none;
+}
+.main li{
+    /* background-color:blueviolet; */
+    color: #fff;
+    margin: 1px 0px;
+    text-indent: 1em;
+    transition: margin 0.3s;
+    height: 40px;
+    border: solid 1px blueviolet;
+}
+.main li:hover{
+    /* margin-left: 30px; */
+    cursor: pointer;
+}
+
+
+
+/* .main li:nth-child(even){
+    background-color: aqua;
+}
+.main li:nth-child(odd){
+    background-color: blueviolet;
+} */
+/* .main li:nth-child(3n){
+    background-color: chartreuse;
+}
+.main li:nth-child(3n-2){
+    background-color: blue;
+}
+.main li:nth-child(3n-1){
+    background-color: blueviolet;
+}  */
+
+
+
+/* .main li:first-child{
+    background-color: deeppink;
+}
+.main li:last-child{
+    background-color: violet;
+} */
+
+/* .main li:nth-child(3n):hover{
+    background: #6b2317;
+    cursor: pointer;
+}
+.main li:nth-child(3n-1):hover{
+    background: #1c4c5e;
+}
+.main li:nth-child(3n-2):hover{
+    background: #4f1982;
+    cursor: pointer;
+} */
+
+.main li:nth-child(3n):hover{
+    /* background: #6b2317; */
+    cursor: pointer;
+}
+.main li:nth-child(3n-1):hover{
+    /* background: #1c4c5e; */
+}
+.main li:nth-child(3n-2):hover{
+    /* background: #4f1982; */
+    cursor: pointer;
+}
+.main li:nth-child(3n){
+    /* background-color: chartreuse; */
+}
+.main li:nth-child(3n-2){
+    /* background-color: blue; */
+}
+.main li:nth-child(3n-1){
+    /* background-color: blueviolet; */
+}
+.main li:nth-child(even)>span{
+    background-color: aqua;
+}
+.main li>span{
+    display: block;
+    padding: 10px 0px;
+    transition: 0.3s;
+}
+.main li:nth-child(odd)>span{
+    background-color: blue;
+}
+
+.main li:hover span{
+    margin-left: 30px;
+}

@@ -1,0 +1,28 @@
+p.ttl{
+    color: aqua;
+}
+.txt{
+    text-align: center;
+    color: aliceblue;
+    background-color: tomato;
+}
+.check{
+    line-height: 20px;
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+}
+.border{
+    border: solid 1px ;
+    padding: 20px;
+}
+.borderTtl{
+    letter-spacing: 10px;
+    border-left-style: solid;
+    border-bottom-style: dotted;
+    border-left-width: thick;
+    padding-left: 10px;
+}
+.borderTtl::first-letter{
+    color: brown;
+}

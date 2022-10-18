@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text"> + <input type="text"> = <input type="text" id="ans" value="10">
+    <input type="button" value="足し算" id="btn">
+    
+<script type="text/javascript">
+    console.log("アタイは大垣よ");
+    // console.log(num);
+    let num;
+    console.log(num);
+    num=10;
+    num=20;
+    console.log(num);
+
+    num=10;
+    let num2=20;
+    console.log("答えは:" + Number(num+num2));
+
+    console.log(document.getElementById("btn"));
+    const btn=document.getElementById("btn");
+    btn.addEventListener("click",()=>{
+        // クリックしたらやりたいことを書く
+        console.log("クリックされた");
+    });
+
+    document.getElementById("ans").value =30;
+
+</script>    
+</body>
+</html>

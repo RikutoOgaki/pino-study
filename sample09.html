@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@5.0.2/dist/ress.min.css">
+    <link rel="stylesheet" href="css/sample09.css">
+    <title>CSSでDrop Down</title>
+</head>
+<body>
+    <div class="header">
+        <h1>CSS DropDown Menu</h1>
+    </div>
+<main class="main">
+    <ul class="base">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">OFFICE</a>
+             <ul class="indent">
+                <li><a href="#">OFFICE A</a></li>
+                <li><a href="#">OFFICE B</a></li>
+                <li><a href="#">OFFICE C</a></li>
+            </ul>
+        </li>
+        <li><a href="#">ABOUT</a>
+             <ul class="indent">
+                <li><a href="#">ABOUT A</a></li>
+                <li><a href="#">ABOUT B</a></li>
+                <li><a href="#">ABOUT C</a></li>
+            </ul>
+        </li>
+        <li><a href="#">RECRUIT</a>
+             <ul class="indent">
+                <li><a href="#">RECRUIT A</a>
+                    <ul class="child">
+                        <li><a href="#">EXTRA A-A</a></li>
+                        <li><a href="#">EXTRA A-B</a></li>
+                        <li><a href="#">EXTRA A-C</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">RECRUIT B</a></li>
+                <li><a href="#">RECRUIT C</a></li>
+            </ul>
+        </li>
+        <li><a href="#">CONTACT</a>
+              <ul class="indent">
+                <li><a href="#">CONTACT A</a>
+                    <ul class="child">
+                        <li><a href="#">EXTRA A-A</a></li>
+                        <li><a href="#">EXTRA A-B</a></li>
+                        <li><a href="#">EXTRA A-C</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT B</a></li>
+                <li><a href="#">CONTACT C</a></li>
+             </ul>
+        </li>
+    </ul>
+</main>
+</body>
+</html>

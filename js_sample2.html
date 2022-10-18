@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="age">
+    <button id="btn">ボタン</button>
+
+
+    <script type="text/javascript">
+        let text = "あいうえお";
+        // console.log("ひらがなは：" + text);
+        //id名btnがクリックされたら、consoleに文字出力
+        document.getElementById("btn").addEventListener("click",()=>{
+            // console.log("クリックした");
+            //変数numの数値が10の時 OKと表示
+            let num = Number(document.getElementById("age").value);
+            console.log(num);
+            if(num==10){
+                console.log("ok");
+            }
+            else if(num >= 11){
+                console.log("okkkkk");
+            }
+            else{
+                console.log("ng");
+            }
+            //書き方
+            //if(条件){
+            //  条件が満たされている時 (true)
+            //}
+            //else
+            // 条件が満たされない場合 (false)
+            //比較演算子
+            //AとBが等しい　A==B
+            //AとBより大きい/小さい
+            //Aが
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.header{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.main{
+    width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    /*border: 1px tomato solid;*/
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 480px;
+    display: flex;
+    margin: 10px;
+}
+
+.thumb{
+    width: 125px;
+    height: 125px;
+    padding: 1px;
+    border: solid 1px #bababa;
+    overflow: hidden;
+}
+.thumb img{
+    width: 100%;
+}
+
+.text_wrap{
+    width: 360px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text_wrap .ttl{
+    font-size: 14px;
+    border-bottom: 1px black solid;
+    margin-bottom: 5px;
+}
+
+.text_wrap .ext{
+    font-size: 12px;
+}

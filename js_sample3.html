@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ja_sample03.css">
+</head>
+<body>
+
+    <button id="btn" class="">ボタン</button>
+
+
+    <script type="text/javascript">
+        const btn=document.getElementById("btn");
+        let count = 2;
+        // let flg=true;
+        btn.addEventListener("click",()=>{
+            // console.log(btn.style.backgroundColor);
+            // if(btn.style.backgroundColor==""){
+            //     console.log("からでした");
+            //     btn.style.backgroundColor="blue";
+            // }
+            // else if(btn.style.backgroundColor=="pink"){
+            //     console.log("ピンクだった");
+            //     btn.style.backgroundColor="blue";
+            // }
+            // else{
+            //     console.log("からじゃない");
+            //     btn.style.backgroundColor="pink";
+            // }
+
+            // btn.classList.toggle("active");
+
+            if(count%2){
+                console.log("maru");
+                btn.style.backgroundColor="skyblue";
+            }
+            else{
+                console.log("batu");
+                btn.style.backgroundColor="blue";
+            }
+            
+            // console.log(count%2);
+            // count++;
+            // console.log(count);
+            
+            // if(flg){
+            //     console.log("maru");
+            //     flg=false;
+            //     btn.style.backgroundColor="blue";
+            // }
+            // else{
+            //     console.log("batu");
+            //     flg=true;
+            //     btn.style.backgroundColor="pink";
+            // }
+        });
+        
+
+    </script>
+</body>
+</html>
