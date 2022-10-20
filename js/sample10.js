@@ -11,7 +11,7 @@ const lal = document.getElementById("txt");
 document.getElementById("btn").addEventListener('click' ,() => {
     console.log("クリックした");
     // document.getElementById("txt").innerText = kak;
-    // Number(kak);
+       Number(kak);
     if(kak.value>=0&&kak.value<=6){
         lal.innerText = "子供ですね";
     }
