@@ -36,9 +36,9 @@ document.getElementById("btn").addEventListener('click' ,() => {
     else if(kak.value>=130){
         lal.innerText = "長生きしすぎです"
     }
-    // else if(kak.value==){
-    //     lal.innerText = "何歳ですか？"
-    // }
+    else if(kak.value==""){
+        lal.innerText = "何歳ですか？"
+    }
 
     // 7~12 小学生
     // 13~18 中高生ですね
