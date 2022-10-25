@@ -22,11 +22,9 @@ console.log(box);
 
 
 box[0].addEventListener("mousedown",() => {
-    // console.log("aaaaaa");
     flg = true;
 });
 box[0].addEventListener("mouseup",() => {
-    // console.log("aaaaaa");
     flg = false;
 });
 
@@ -38,9 +36,6 @@ box[0].addEventListener("mouseup",() => {
 // });
 let flg = false;
 window.addEventListener('mousemove',(evt)=> {
-    // console.log(evt.clientX,evt.clientY);
-    // box[0].style.left = evt.clientX-62.5 + "px";
-    // box[0].style.top = evt.clientY-62.5 + "px";
     if(flg){
         box[0].style.left = evt.clientX-62.5 + "px";
         box[0].style.top = evt.clientY-62.5 + "px";
