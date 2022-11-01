@@ -1,0 +1,112 @@
+.eria{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(90deg,#6af8f7,#e4dba7);
+}
+.inpat{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+.tet{
+    border: 1px solid #000;
+    width: 70%;
+    height: 40px;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    border: #000 1px solid;
+    background-color: #6af8f7;
+}
+.bTn{
+    width: 200px;
+    height: 40px;
+    border: #000 solid 1px;
+}
+.text{
+    text-align: center;
+    line-height: 5;
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    opacity: 0;
+}
+.text:before{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #fff;
+    z-index: 1;
+}
+.text:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 200px / 10px;
+    box-shadow: 0 50px 20px rgba(0, 0, 0, 1);
+    content: '';
+}
+.anime{
+    animation: fadein .5s ease-in-out  forwards;
+}
+@keyframes fadein {
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    20%{
+        opacity: .2;
+    }
+    40%{
+        opacity: .4;
+    }
+    60%{
+        opacity: .6;
+    }
+    80%{
+        opacity: .8;
+    }
+    100%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
+.animetop{
+    animation: fadeout .5s ease-in-out  forwards;
+}
+@keyframes fadeout {
+    0%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    20%{
+        opacity: .8;
+    }
+    40%{
+        opacity: .6;
+    }
+    60%{
+        opacity: .4;
+    }
+    80%{
+        opacity: .2;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+}
