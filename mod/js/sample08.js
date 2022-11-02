@@ -3,16 +3,15 @@ const clear = document.getElementById("clear");
 const tet = document.querySelector(".text")
 const eria = document.getElementById("eria");
 const tXet = document.getElementById("tet");
-console.log(tet);
+console.log(tXet);
 console.log(btn);
-let text = tXet.value;
+const box = '<div>' +tXet.value + '</div>';
 btn.addEventListener('click',()=>{
-    eria.innerHTML = '<div class="text">' + txet + '</div>';
-    console.log(text);
-    tet.classList.add("anime");
-    tet.classList.remove("animetop");
+    eria.innerHTML = "<div class='text'>" + tXet.value +"</div>";
+    box.classList.add("anime");
+    box.classList.remove("animetop");
 })
 clear.addEventListener('click', ()=>{
-    tet.classList.add("animetop");
-    tet.classList.remove("anime");
+    box.classList.add("animetop");
+    box.classList.remove("anime");
 })
