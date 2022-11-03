@@ -30,7 +30,7 @@
     height: 40px;
     border: #000 solid 1px;
 }
-.text{
+/* .text{
     text-align: center;
     line-height: 5;
     width: 200px;
@@ -39,8 +39,8 @@
     background-color: #fff;
     position: relative;
     opacity: 0;
-}
-.text:before{
+} */
+.anime:before{
     content: "";
     position: absolute;
     bottom: -25px;
@@ -50,7 +50,7 @@
     border-top: 15px solid #fff;
     z-index: 1;
 }
-.text:after{
+.anime:after{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -61,6 +61,14 @@
     content: '';
 }
 .anime{
+    text-align: center;
+    line-height: 5;
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    opacity: 0;
     animation: fadein .5s ease-in-out  forwards;
 }
 @keyframes fadein {
