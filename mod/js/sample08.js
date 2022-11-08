@@ -6,12 +6,14 @@ const tXet = document.getElementById("tet");
 console.log(tXet);
 console.log(btn);
 console.log(clear);
-let tBox;
+// let tBox;
 // let max = [];
 // const box = `<div class=text>${tXet.value}</div>`;
 btn.addEventListener('click',()=>{
     let ele = document.createElement("div");
+    let txet = document.createTextNode(tXet.value);
     ele.classList.add("anime");
+    ele.appendChild(txet);
     console.log(ele);
     eria.appendChild(ele);
     // eria.innerHTML += `<div class="anime">${tXet.value}</div>`;
