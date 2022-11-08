@@ -69,7 +69,7 @@
     background-color: #fff;
     position: relative;
     opacity: 0;
-    animation: fadein .5s ease-in-out  forwards;
+    animation: fadein .5s ease forwards;
 }
 @keyframes fadein {
     0%{
