@@ -30,7 +30,8 @@ clear.addEventListener('click', ()=>{
     for(let i=0; i<chatanime.length; i++){
         // document.querySelectorAll(".anime").remove();
         console.log(chatanime[i]);
-        chatanime[i].remove();
+        chatanime[i].classList.add("animetop");
+        chatanime[i].classList.remove("anime");
     }
     // tet.classList.add("animetop");
     // tBox.classList.add("animetop");

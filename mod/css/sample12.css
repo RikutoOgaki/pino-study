@@ -94,7 +94,7 @@
     }
 }
 .animetop{
-    animation: fadeout .5s ease-in-out  forwards;
+    animation: fadeout .5s ease  forwards;
 }
 @keyframes fadeout {
     0%{
