@@ -6,9 +6,6 @@ const tXet = document.getElementById("tet");
 console.log(tXet);
 console.log(btn);
 console.log(clear);
-// let tBox;
-// let max = [];
-// const box = `<div class=text>${tXet.value}</div>`;
 btn.addEventListener('click',()=>{
     let ele = document.createElement("div");
     let txet = document.createTextNode(tXet.value);
