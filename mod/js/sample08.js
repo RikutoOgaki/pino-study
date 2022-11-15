@@ -26,9 +26,9 @@ clear.addEventListener('click', ()=>{
     let chatanime = document.querySelectorAll(".anime");
     for(let i=0; i<chatanime.length; i++){
         // document.querySelectorAll(".anime").remove();
-        console.log(chatanime[i]);
         chatanime[i].classList.add("animetop");
         chatanime[i].classList.remove("anime");
+        console.log(chatanime[i]);
     }
     // tet.classList.add("animetop");
     // tBox.classList.add("animetop");

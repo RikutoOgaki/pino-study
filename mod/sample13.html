@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ress.css">
+    <link rel="stylesheet" href="./css/sample13.css">
+    <title>モーダルウィンドウ</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        main{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: tomato 1px solid;
+        }
+        picture{
+            width: 400px;
+            border: solid tomato 1px;
+        }
+        img{
+            width: 100%;
+        }
+        .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 80%);
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay>picture{
+            width: 800px;
+            padding: 15px;
+            background-color: #fff;
+        }
+        .hiddon{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <picture>
+            <img src="./images/img_modal_kyouto01.jpg" alt="山">
+        </picture>
+        <div class="overlay hiddon" id="overlay">
+            <picture>
+                <img src="./images/img_modal_kyouto01_l.jpg" alt="">
+            </picture>
+        </div>
+    </main>
+    
+    <script src="./js/sample09.js"></script>
+</body>
+</html>
