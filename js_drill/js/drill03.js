@@ -17,36 +17,49 @@ e/5 には ○
 ● ○
 */
 
+// 表示
+// for(var i=1; i<=9; i++){
+//     var tr = document.createElement("tr");
+//     target.appendChild(tr);
+//     // 縦軸ラベル表示
+//     var th = document.createElement("th");
+//     tr.appendChild(th);
+//     th.textContent = i;
+//     for(var j=1; j<=9; j++){
+//       var td = document.createElement("td");
+//       tr.appendChild(td);
+//       var cellValue = j+"×"+i+"="+(i*j);
+//       td.textContent = cellValue;
+//     }
+//   }
+
+
+
+
+
 const tab = document.getElementById("reversi");
-console.dir(tab);
-const arr = tab.querySelector
+console.log(tab);
 
-
-const num = document.getElementsByTagName("tbody");
-console.log(num);
-// console.log(i);
-tab.innerHTML += 
-`<tbody>
-<tr>
-
-</tr>
-</tbody>`
-
-for(let i=0; i<7; i++){
-    tab.innerHTML+=`<tr>`
-    for(let i=0; i<6; i++){
-        // for(let j=0; j<7; j++){
-            // tab.querySelector("tr").innerHTML+=`<td></td>`
-            // tab.querySelector("tr").innerHTML+=`<td></td>`
-            // }
+for(let i=0; i<8; i++){
+    const tbody = document.createElement("tbody");
+    tab.appendChild(tbody);
+    let tr = document.createElement("tr");
+    tbody.appendChild(tr);
+    for(let j=0; j<8; j++){
+        let td = document.createElement("td");
+        tr.appendChild(td);
+        if(i){
+            td.textContent = "○";
         }
-        tab.innerHTML+=`</tr>`
-        };
-
-
-
-
-
-
-
+        else if(j){
+            td.textContent = "●";
+        }
+        // else if(j===3){
+        //     td.textContent = "○";
+        // }
+        // else{
+        //     td.textContent = "";
+        // }
+    } 
+}
 
