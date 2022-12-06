@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/ress.css">
+  <title>Document</title>
+  <style type="text/css">
+    .main{
+      padding: 20px;
+      border: solid 1px #333;
+    }
+    #cash{
+      font-size: 30px;
+    }
+    input[type="text"]{
+      border: solid 1px #333;
+      padding: 10px;
+    }
+    input[type="button"]{
+      border: solid 1px #333;
+      padding: 10px;
+    }
+    input[type="button"]:hover{
+      background: #333;
+      color: #FFF;
+    }
+    .wrap{
+      margin: 20px 0;
+    }
+    .wrap ul{
+      margin: 40px 0;
+      list-style: none;
+    }
+    .wrap ul li{
+      border-bottom: solid 1px #333;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h2>現在の残高</h2>
+    <p id="cash">3000</p>
+    
+    <div class="wrap">
+      <input type="text" value="" id="bill">
+      <input type="button" value="支払う" id="send" >
+    </div>
+    <div class="wrap">
+      <h2>利用の履歴</h2>
+      <ul id="history">
+        <li>Out:-1200 Charge:0 Remaining:1800</li>
+        <li>Out:-3000 Charge:2000 Remaining:800</li>
+      </ul>
+    </div>
+  </div>
+  <script src="js/drill07.js"></script>
+</body>
+</html>

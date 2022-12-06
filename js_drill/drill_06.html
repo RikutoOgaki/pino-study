@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/ress.css">
+  <title>Document</title>
+  <style type="text/css">
+    .wrap{
+      height: 500vh;
+      padding: 20px;
+    }
+    .wrap h1{
+      font-size: 48px;
+      text-align: center;
+      height: 100vh;
+      background: #2a242a;
+      color: #FFF;
+    }
+    section{
+      display: flex;
+      width: 900px;
+      margin: 80px auto;
+      padding: 80px;
+      border: solid 1px #333;
+    }
+    section:nth-of-type(2){
+      flex-direction: row-reverse;
+    }
+    section h2{
+      border-bottom: solid 3px #333;
+      padding-bottom: 20px;
+      margin: 20px 0 0 20px;
+    }
+    section p{
+      width: 450px;
+      padding: 40px;
+    }
+    figure{
+      width: 100%;
+    }
+    figure img{
+      width: 100%;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Page Scroll</h1>
+    <section>
+      <div class="msgWrap">
+        <h2>Photo 01</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+      <figure><img src="img/drill06_01.jpg" alt=""></figure>
+    </section>
+    <section>
+      <div class="msgWrap">
+        <h2>Photo 02</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+      <figure><img src="img/drill06_02.jpg" alt=""></figure>
+    </section>
+    <section>
+      <div class="msgWrap">
+        <h2>Photo 01</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+      <figure><img src="img/drill06_03.jpg" alt=""></figure>
+    </section>
+  </div>
+  <script src="js/drill06.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/ress.css">
+  <title>Document</title>
+  <style type="text/css">
+    .calcWrap{
+      border: solid 1px #333;
+      padding: 20px;
+    }
+    input{
+      border: solid 1px #333;
+    }
+    input[type="button"]{
+      padding: 10px;
+    }
+    input[type="text"]{
+      padding: 10px 5px;
+    }
+    .outPut{
+      padding: 20px;
+      font-size: 32px;
+    }
+    .err{
+      color: #B00;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="calcWrap">
+    <input type="text" id="price">
+    <input type="button" value="計算">
+  </div>
+  <div class="outPut">
+    <p id="result"></p>
+  </div>
+  <script src="js/drill04.js"></script>
+</body>
+</html>
