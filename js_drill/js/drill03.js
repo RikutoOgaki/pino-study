@@ -17,49 +17,24 @@ e/5 には ○
 ● ○
 */
 
-// 表示
-// for(var i=1; i<=9; i++){
-//     var tr = document.createElement("tr");
-//     target.appendChild(tr);
-//     // 縦軸ラベル表示
-//     var th = document.createElement("th");
-//     tr.appendChild(th);
-//     th.textContent = i;
-//     for(var j=1; j<=9; j++){
-//       var td = document.createElement("td");
-//       tr.appendChild(td);
-//       var cellValue = j+"×"+i+"="+(i*j);
-//       td.textContent = cellValue;
-//     }
-//   }
-
-
-
-
 
 const tab = document.getElementById("reversi");
 console.log(tab);
 
-for(let i=0; i<8; i++){
-    const tbody = document.createElement("tbody");
+for(let i=1; i<9; i++){
+    let tbody = document.createElement("tbody");
     tab.appendChild(tbody);
     let tr = document.createElement("tr");
     tbody.appendChild(tr);
-    for(let j=0; j<8; j++){
+    for(let j=1; j<9; j++){
         let td = document.createElement("td");
         tr.appendChild(td);
-        if(i){
-            td.textContent = "○";
-        }
-        else if(j){
+        // console.dir(td);
+        if(j===4){
             td.textContent = "●";
         }
-        // else if(j===3){
-        //     td.textContent = "○";
-        // }
-        // else{
-        //     td.textContent = "";
-        // }
-    } 
+        let tdd = document.querySelectorAll("td");
+        console.log(tdd);
+    }
 }
 
