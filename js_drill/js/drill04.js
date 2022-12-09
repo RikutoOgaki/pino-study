@@ -16,4 +16,23 @@ drill04 - 消費税の出力
 
 */
 
+const result = document.getElementById("result");
+const price = document.getElementById("price");
+const btn = document.getElementsByTagName("input");
+// const mix = 0.1;
+console.log(result);
+
+btn[1].addEventListener('click', ()=>{
+    result.innerText = price.value + "の税込価格は"+ (Number(price.value) + Number(price.value*0.1)) + "です";
+    console.dir(typeof price.value);
+    // if(price.value == 0||1||2||3||4||5)
+    // if(price.value){
+    //     result.classList.add("err");
+    //     result.innerText = "数値を入力してください";
+    // }
+    // else if(Number(result.value) == ){
+    //     result.classList.add("err");
+    //     result.innerText = "有効な数値を代入してください"
+    // }
+});
 
