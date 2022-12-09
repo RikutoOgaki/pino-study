@@ -23,14 +23,13 @@ const btn = document.getElementsByTagName("input");
 console.log(result);
 
 btn[1].addEventListener('click', ()=>{
-    result.innerText = price.value + "の税込価格は"+ (Number(price.value) + Number(price.value*0.1)) + "です";
     console.dir(typeof price.value);
-    // if(price.value == 0||1||2||3||4||5)
+    result.innerText = price.value + "の税込価格は"+ (Number(price.value) + Number(price.value*0.1)) + "です";
     // if(price.value){
     //     result.classList.add("err");
     //     result.innerText = "数値を入力してください";
     // }
-    // else if(Number(result.value) == ){
+    // else if(){
     //     result.classList.add("err");
     //     result.innerText = "有効な数値を代入してください"
     // }
