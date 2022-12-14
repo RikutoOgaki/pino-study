@@ -6,6 +6,16 @@ HTMLの情報は変更せず、JavaScriptで実現すること。
 */
 const link = document.querySelectorAll("a");
 console.log(link);
+link.forEach((e) => {
+    console.log(e.href);
+    if(e.href == "http:"){
+        // window.open("https//","外部リンク")
+        e.style.color = "black";
+    }
+    else if(e.href == "https:"){
+        e.style.color = "red";
+    }
+})
 
 
 
