@@ -23,9 +23,9 @@ console.log(result);
 
 btn[1].addEventListener('click', ()=>{
     let flg = Math.sign(price.value);
-    
     console.log(Math.sign(price.value));
     console.log(price.value);
+
     if(flg == 1){
         result.innerText = price.value + "の税込価格は"+ (Number(price.value) + Number(price.value*0.1)) + "です";
     }
@@ -33,7 +33,7 @@ btn[1].addEventListener('click', ()=>{
         result.classList.add("err");
         result.innerText = "数値を入力してください";
     }
-    else if(flg == -1){
+    else{
         result.classList.add("err");
         result.innerText = "有効な数値を代入してください"
     }
