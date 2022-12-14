@@ -7,4 +7,8 @@ drill06 - スクロール処理
 尚、アニメーションは任意のもので構わない。
 */
 
-
+const conte = document.querySelectorAll("section");
+console.log(conte);
+window.addEventListener("scroll", (evt)=> {
+    console.log(window.scrollY);
+})
